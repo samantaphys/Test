@@ -1,0 +1,139 @@
+<div class="nr">
+
+! [[Course Overview - An Introduction to General Relativity]]
+
+!! Grades: 
+
+<<alert info src:"Tuesday and Friday morning, 8 AM">>
+
+|Assignments | 50% |
+|Mid-sem exam | 20% |
+|End-sem exam | 30% |
+|Computational excercises | Python, Mathematica, SAGE, Jupyter notebook |
+
+
+!! Syllabus and references:
+
+!!! Week-1,2: ''Prerequisites''
+
+* Mathematical Methods: 
+ ** Kreyszig Ch-7,8,9,10; Appendix-A3.4
+# [[Newtonian Gravitation]]
+ ## Gravity vs electrostatic force: Weak force but biggest player! 
+  ##* ''"How heavy and how small" is what matters!''
+  ## Derivation and use of ''Poisson's equation''.
+	##  Two body problem in Newtonian gravity for the small body moving around massive object. Expressions for $$\frac{dr}{dt}, \frac{d\phi}{dt}$$ (later it will be contrasted with results using relativistic gravity); Bound and unbound systems; Stability of orbits. 
+ ## Equations of hydrodynamics and Energy-momentum tensor in classical gravity: 
+  ##* Construction of a star under hydrostatic equillibrium. 
+ ## Virial theorem of collection of particles. 
+
+# [[Special Relativity]]
+ ## [Preclass]: Suggestion for scientific explanatory video: https://youtu.be/JmSV8mISWmU : World line of an object.
+ ## Using Lorentz transformation to realize and calculate length contraction, time dilation and other special relativistic effects.
+ ## Minkowski's idea of 4D spacetime geometry -- world line, events and line interval. Line elements in pseudo-Euclidean geometry.
+ ## Spacelike, timelike and null intervals and its invariance as proper time-interval.
+ ## Derivation of Lorentz boost in one direction and relation with the nature of hyperbolic geometry.
+ ##  Writing Lorentz transformation as matrix form.
+ ## Principle of least action: writing Lagrangian for relativistic and non-relativistic systems.
+  ##* importance of boundary conditions. 
+ ## Statements and examples of ''Lorentz Covariance''
+ ## Please derive the classical equations of hydrodynamics starting from a more general conservation equation that is of ''energy-momentum'' tensor ($$T_{\mu\nu}$$) of relativistic flow with the definition of energy-momentum tensor as $$T_{\mu\nu} = (p+\epsilon)u^\mu u^\nu + pg^{\mu\nu} $$ (''Why this form the most general for an ideal fluid?'') Show correspondence with classical notion of energy-momentum tensor i.e. mass density, internal energy density, momentum fluxes <<ref [[Poisson and Will 2014]]>>. 
+
+> Classical Gravity and Special Relativity: Inconsistencies and resolution. 
+
+!!! ''Week-3,4'': Origins of General Relativity
+
+ #* [Preclass]: https://youtu.be/P11Txh5C1UI: lectures by Prof. G. Srinivasan.
+ ## Using Galilean transformation to obtain transformation of elementary physical quantities such as velocity, acceleration, energy between two inertial reference frames. 
+  ##* ''How does equations change in non-inertial reference frames? Do they look same in two different accelerated reference frames?''
+ 
+ ## ''Equivalence Principle:'' Equality between gravitational and inertial masses. Newton's argument and Einstein's extension as Weak Equivalence Principle. 
+  ##* Meaning of "locally flat". 
+ ## Writing line element (distance between two nearby points) in orthogonal systems such as Cartesian system: $$ds^2 = dx^2 + dy^2 + dz^2$$, cylindrical and spherical. Identifying all the components of metric tensor and variation of unit vector along a curve. 
+ ## Obtaining the components of metric tensor in cylindrical/spherical coordinates using metric tensor in Cartesian system and a given transformation law between these systems and vice-versa.
+ ## Realizing the invariance of line elements in 3D.
+
+# General Covariance and Einstein's Equations
+ ## Galiliean Relativity: Invariance of mass, charge and length and time intervals. Covariance of Physical laws (conservations laws) between inertial reference frames.
+ ## [Revisit] Special Relativity: Invariance of speed of light, Covariant form of physical laws for inertial reference frames (''Lorentz Covariance'')
+ ## Covariance in general: Need for tensor formulation of physical laws. 
+  ### Analysis on Manifolds <<ref [[Schutz 1985]]>>.
+ ## Properties of Energy-momentum tensor, $$T_{\mu\nu}$$ from action.
+  ##* Different types of idealized examples -- pressure-less dust, ideal fluid with isotropic pressure, radiation, electromagnetic field. 
+	##* Conservation law for energy-momentum tensor. 
+ ## "Derivation" of Einstein's Field equations: a ''historical note:'' https://arxiv.org/pdf/1608.05752.pdf 
+## ''Hilbert-Einstein Action:'' Using Hamilton's action principle to derive Einstein's equation. 
+
+ ## [Additional Topics]''Setting up coordinate systems for an accelerated observers'' 
+ ##  Derivation of Geodesic equation: 
+ 	##* [Preclass]: https://youtu.be/3NnZzRb7L58
+ ##  [Additional Topics] Uniqueness of Einstein tensor and $$f(R)$$ gravity.
+
+!!! Week-5,6,7,8:
+
+# Solutions of EE: 
+ #* [Preclass]: https://youtu.be/sEDFHMLPaW8 , https://youtu.be/HJlhBPci_Bg 
+ ## ; (see [Preclass] https://youtu.be/-UPSiKugRW0); given $$g_{\mu\nu}$$, find $$\Gamma^{\mu\nu}_\lambda, R_{\mu \nu \sigma \lambda}, R_{\mu \nu}, R$$. Complete few examples with pen-paper calculation and then using Mathematica notebooks. 
+  ### Invariant quantities constructed from the quantities and their significance in distinguishing physical and unphysical properties of spacetime
+	### Calculate ''Kretschmann Scalar''.
+ ## Starting with Einstein's equation with unknown constant, $$G^{\mu \nu}=\kappa T^{\mu \nu}$$. In the weak field limit, $$g_{\mu \nu}=\eta _{\mu \nu}+h_{\mu \nu}$$ with $$h_{\mu \nu} << 1$$ and 
+  ### [Preclass]: https://youtu.be/JKQMre-bze4  
+  ### $$T^{\mu \nu}=[\rho c^2 ,0,0,0]$$ (slowly moving matter with no pressure) and compare with the Newtonian Gravity, $$\nabla ^2 \phi = 4 \pi G \rho$$ to find out the constant, $$\kappa$$.
+	### $$T^{\mu \nu}=[0,0,0,0]$$ (empty space solution `just like light!`): wave solutions. 
+ ## Start with the Schwarzschild metric in spherical coordinate system to show that it satisfies Einstein's equation in vaccum.
+ ## Schwarszchild solution: 
+  ### ''methods of finding solutions'': <<ref [[Chandrasekhar 1983]]>>
+  ### Physicality of a solution and Coordinate singularity. 
+	### Schwarzschild metric in different coordinates. 
+
+ ## Relativistic Stars <<ref [[Zeldovich and Novikov 1967]]>>
+  ### Structure of a neutron star; ''TOV equation'' and Tidal Deformability.
+	### Problem of equation of state. 
+	
+ ## Kerr solution
+  ### Slowly rotating Stars: approximate treatment in GR.
+ 	### Ergoregion and dual-horizons. 
+	### Existence of maximum spin. 
+## Evidence and realization of Schwarzschild and Kerr solution in nature. 
+
+!!! ''Week- 9,10'':
+
+# Particle Path and Photon path in Schwarzchild and Kerr Geometry:
+  ## [Pre-class]: Following <<ref [[Hartle 2003]]>>.
+  ## Geodesic equation for particles.
+  ## Bending of light <<ref [[Hartle 2003]]>>; Gravitational lensing and applications in astrophysics.
+	## precession of perihelion 
+	## Shapiro delay
+	## Tests of GR and future directions.
+		### Gravitational Wave observations. 
+ 
+!!! Overview of Relativistic Astrophysics 
+
+# Blackholes, Neutron Stars and Cosmology
+  ## accretion disks
+	## Pulsars
+	## Extreme mass-ratio binary black holes. 
+	## Binary compact mergers
+	 ### [Additional Topics] Wave solution produced by Post-Newtonian sources; solution as a Green's function given sources. ''Lecture by Prof. Bala Iyer, Prof. P. Ajith''.
+	 ### [Advanced] Analytical and numerical computation of waveforms: Hence, the need for Numerical Relativity which is possible only after we establish a well-posed initial value problem. (more on this later in [[Cauchy Problem in General Relativity]])
+	
+!!! ''Week- 11,12'':
+
+# Relativistic Cosmology
+ #* [Preclass]: https://youtu.be/HJlhBPci_Bg 
+ ## Homogeity and Isotropy of cosmos: an observational fact and Copernican principle. 
+ ## Form of metric for the universe; ''Friedman-Robertson-Walker'' Models. 
+  ### Constant curvature geoemtries: de Sitter model. 
+ ## Hubble Constant and its measurement. 
+ ## Cosmological Redshift and Thermal history; temperature of cosmic microwave background radiation. 
+ ## Homogeneous non-isotropic cosmologies: Bianchi models. 
+ 
+# [Advanced] [[Cauchy Problem in General Relativity]]
+ ## <<ref [[Wald 2010]]>> for an introduction. 
+ 
+
+ 
+ 
+<<showrefs title:"References">>
+
+</div>
